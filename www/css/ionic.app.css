@@ -9815,8 +9815,19 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-body {
-  font-size: 20px; }
+.my {
+  width: 100%;
+  height: 100%; }
+  .my .sec {
+    width: 100%; }
+    .my .sec.ul li img {
+      display: block;
+      width: .8rem;
+      height: .8rem; }
+    .my .sec.ul li .sec_con > div img {
+      display: block;
+      width: .3rem !important;
+      height: .3rem; }
 
 /* Empty. Add your own CSS if you like */
 .tab-item .icon {

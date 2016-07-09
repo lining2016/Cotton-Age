@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.tab-item .icon{
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+}
+.tab-item-active{
+  color:#1d7f68;
+}

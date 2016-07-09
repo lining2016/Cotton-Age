@@ -1,8 +1,126 @@
-<div>全棉
-  <ion-header-bar >
-    <button class="button button-icon ion-ios-minus-outline" ng-click="showDeleteButton()"></button>
-          <h1 class="title">Title</h1>
-          <button class="button button-icon ion-navicon" ng-click="showReorder = !showReorder"></button>
+<div class="home-content">
+  <ion-header-bar class="home-header">
+    <span class="  icon iconfont icon-fenlei " ></span>
+    <label for="" class=" header-title">
+      <i class=" iconfont icon-sousuo"></i>
+      <input type="text" class="sousuo" placeholder="搜索商品"/>
+    </label>
+    <span class=" icon iconfont icon-xinxi " ></span>
   </ion-header-bar>
+<ion-content class="has-header ">
+  <ion-slide-box  class=" banner "
+                  on-slide-changed="slideHasChanged($index)"
+                  auto-play="true"
+                  does-continue="true"
+                  show-pager="true"
+                  active-slide="model.activeIndex"
+                  delegate-handle="delegateHandler">
+    <ion-slide>
+      <div class="box ">
+        <img src="http://placehold.it/320x160">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="box ">
+        <img src="http://placehold.it/320x160">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="box ">
+        <img src="http://placehold.it/320x160">
+      </div>
+    </ion-slide>
+  </ion-slide-box>
+
+  <div class="home-nav ">
+    <div class="row">
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>促销活动</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>物流查询</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>会员中心</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>领取积分</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>Kids/ 婴童</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>Women/女士</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>Home/ 家居</p>
+      </div>
+      <div class="col">
+        <i class="icon iconfont icon-fenlei"></i>
+        <p>Men/ 男士</p>
+      </div>
+    </div>
+  </div>
+  <div class="activity">
+    <div class="list activity-header">
+      <a class="item item-icon-right" href="#">
+      <i class="icon ion-ios-arrow-right"></i>
+      <img src="./img/1.png" alt="">
+      活动倒计时：  <b>10</b>:<b>10</b>:<b>10</b>
+    </a>
+    </div>
+    <div class="row">
+      <div class="list col">
+        <a class="item item-thumbnail-center" href="#">
+          <img src="http://placehold.it/180x200">
+          <h2>脸部清洁护理专用</h2>
+          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
+            <p class="Price">秒杀价 <i>￥</i><b>142</b><i>.3 </i> <em> 237.2</em></p>
+        </a>
+      </div>
+      <div class="list col">
+        <a class="item item-thumbnail-center" href="#">
+          <img src="http://placehold.it/180x200">
+          <h2>脸部清洁护理专用</h2>
+          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
+          <p class="Price">秒杀价 <i>￥</i><b>142</b><i>.3 </i> <em> 237.2</em></p>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="hot">
+    <h2 class="hot-header">/HOT推荐/</h2>
+    <div class="row">
+      <div class="list col">
+        <a class="item item-thumbnail-center" href="#">
+          <img src="http://placehold.it/170x200">
+          <h2>脸部清洁护理专用</h2>
+          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
+
+        </a>
+      </div>
+      <div class="list col">
+        <a class="item item-thumbnail-center" href="#">
+          <img src="http://placehold.it/170x200">
+          <h2>脸部清洁护理专用</h2>
+          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
+
+        </a>
+
+      </div>
+    </div>
+  </div>
+ </ion-content>
 
 </div>

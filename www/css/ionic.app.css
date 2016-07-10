@@ -9952,6 +9952,9 @@ body, html {
             text-decoration: line-through; }
   body .hot .hot-header, html .hot .hot-header {
     font-size: .2rem; }
+    body .hot .hot-header::before, html .hot .hot-header::before {
+      content: '';
+      border: .02rem solid #009e84; }
   body .hot .row, html .hot .row {
     border: 0;
     padding: 0; }
@@ -9963,6 +9966,12 @@ body, html {
         text-align: center; }
         body .hot .row .col .item img, html .hot .row .col .item img {
           width: 100%; }
+        body .hot .row .col .item p, html .hot .row .col .item p {
+          line-height: .3rem; }
+          body .hot .row .col .item p.p-red, html .hot .row .col .item p.p-red {
+            color: #f00;
+            text-align: left;
+            font-size: .2rem; }
 
 .my {
   width: 100%;

@@ -9881,7 +9881,7 @@ a.button {
       text-align: center;
       line-height: 46px; }
       .my .third > div:nth-child(1) {
-        border-right: 1px solid #fff; }
+        border-right: 1px solid #ccc; }
       .my .third > div:nth-child(2) i {
         font-size: 20px;
         padding-left: 5px; }

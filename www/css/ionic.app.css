@@ -9878,7 +9878,7 @@ body, html {
       height: .58rem;
       text-align: center;
       line-height: .50rem;
-      font-size: .26rem;
+      font-size: .30rem;
       color: #fff;
       background: #ef5452; }
     body .home-nav .row .col p, html .home-nav .row .col p {
@@ -9892,7 +9892,8 @@ body, html {
     body .home-nav .row .col:nth-child(4) i, html .home-nav .row .col:nth-child(4) i {
       background: #30bc7f; }
   body .home-nav .row:nth-child(2) .col:nth-child(1) i, html .home-nav .row:nth-child(2) .col:nth-child(1) i {
-    background: #e99dbb; }
+    background: #e99dbb;
+    font-size: .36rem; }
   body .home-nav .row:nth-child(2) .col:nth-child(2) i, html .home-nav .row:nth-child(2) .col:nth-child(2) i {
     background: #e8c3f6; }
   body .home-nav .row:nth-child(2) .col:nth-child(3) i, html .home-nav .row:nth-child(2) .col:nth-child(3) i {

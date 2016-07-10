@@ -172,8 +172,11 @@ body,html{
       .list{
         padding:0;
         .item-thumbnail-center{
-          padding:0;
+          padding:.03rem;
           text-align: center;
+          img{
+            width:100%;
+          }
           h2{
 
             line-height:.3rem;
@@ -210,11 +213,27 @@ body,html{
   .hot{
     .hot-header{
       font-size:.2rem;
-      &:befor{
-        content:' ';
-        width:2.rem;
-        background:#f00;
+      // &:befor{
+      //   content:' ';
+      //   width:2.rem;
+      //   background:#f00;
+      //
+      // }
+    }
+    .row{
+      border:0;
+      padding:0;
+      .col{
+        border:0;
+          padding:0;
+        .item{
+          border:0;
+          text-align: center;
 
+          img{
+            width:100%;
+          }
+        }
       }
     }
   }

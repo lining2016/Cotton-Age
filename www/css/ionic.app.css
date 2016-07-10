@@ -9925,8 +9925,10 @@ body, html {
   body .activity .row .list, html .activity .row .list {
     padding: 0; }
     body .activity .row .list .item-thumbnail-center, html .activity .row .list .item-thumbnail-center {
-      padding: 0;
+      padding: .03rem;
       text-align: center; }
+      body .activity .row .list .item-thumbnail-center img, html .activity .row .list .item-thumbnail-center img {
+        width: 100%; }
       body .activity .row .list .item-thumbnail-center h2, html .activity .row .list .item-thumbnail-center h2 {
         line-height: .3rem; }
       body .activity .row .list .item-thumbnail-center p, html .activity .row .list .item-thumbnail-center p {
@@ -9949,6 +9951,17 @@ body, html {
             text-decoration: line-through; }
   body .hot .hot-header, html .hot .hot-header {
     font-size: .2rem; }
+  body .hot .row, html .hot .row {
+    border: 0;
+    padding: 0; }
+    body .hot .row .col, html .hot .row .col {
+      border: 0;
+      padding: 0; }
+      body .hot .row .col .item, html .hot .row .col .item {
+        border: 0;
+        text-align: center; }
+        body .hot .row .col .item img, html .hot .row .col .item img {
+          width: 100%; }
 
 .my {
   width: 100%;

@@ -9815,10 +9815,16 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+body {
+  font-size: 16px;
+  color: #3c3c3c; }
+
 .my {
   width: 100%;
   height: 100%;
   background: #eee; }
+  .my .spe {
+    color: #7d7e81; }
   .my ul.sec li img {
     display: block;
     width: 80px;

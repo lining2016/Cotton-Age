@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list-group">
+    <accordion close-others="oneAtATime" class="list-group">
+        <accordion-group heading="{{titleName}}" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+            <accordion close-others="oneAtATime" class="list-group">
+                <accordion-group heading="{{parent.name}}" ng-repeat="parent in parents">
+                    <ul class="nav nav-list">
+                        <li ng-repeat="child in parent.children">
+                            <a ng-click="select(child.sref,child.name)" ui-sref="main.show">{{child.name}}</a>
+                        <li>
+                    </ul>
+                </accordion-group>
+            </accordion>
+        </accordion-group>
+    </accordion>
+</div>
+
+
+<!-- 与左边联系的右边内容区域布局文件 -->
+
+<div ng-controller="TabsChildController">
+    <tabset>
+        <tab ng-repeat="content in contents"
+             heading="{{content.name}}" 
+             active=content.active>
+            <div ng-init="content=content">
+                <div ng-include='content.url'>
+                </div>
+            </div>     
+        </tab>
+    </tabset>
+</div>
+</body>
+<script>
+    /* 菜单动态显示*/
+var ddd=angular.module("MenuModule",['ui.bootstrap','tabsModule']);
+ddd.controller('menuController', function ($rootScope,$scope,$http) {
+    $http({
+        method:"post",
+        url:"/AngularJsDemo/MenuServlet"
+    }).success(function(data) {
+        var parents =  new Array();
+        var chilren =  new Array();
+        console.log(data);
+        $scope.titleName = "图书列表";
+        
+        for (var i = 0; i < data.length; i++)
+        {
+            if( data[i]['parent'] == 0){
+                var parent = new Object();
+                parent['sref'] = data[i]['bookTypeId'];
+                parent['name'] = data[i]['bookTypeName'];
+                parent['children'] = new Array();
+                parents.push(parent);
+            }else{
+                var child = new Object();
+                child['sref'] = data[i]['bookTypeId'];
+                child['name'] = data[i]['bookTypeName'];
+                child['parent'] = data[i]['parent'];
+                chilren.push(child);
+            }
+        }
+        
+        for(var i = 0; i < chilren.length; i++){
+             for(var j = 0; j < parents.length; j++){
+                if(chilren[i]['parent'] == parents[j]['sref']){
+                    parents[j]['children'].push(chilren[i]);
+                }
+             }
+        }
+        
+        $scope.parents = parents;
+        $scope.chilren = chilren;
+        
+        $scope.status = {
+            isFirstOpen: true,
+            isFirstDisabled: false
+        };
+        
+    });
+    
+    $scope.select = function(href,name){
+        $http({
+            method  : 'post',
+            url     : '/AngularJsDemo/BookServlet',
+            params    : {bookType:href}  
+        }).success(function(data) {
+            $rootScope.addWorkspace($scope.contentUrl,name);
+//          $rootScope.setPagingData(data, 1, 10);
+      }).error(function(data,status,headers,config){
+        alert("错误");
+      });
+    };
+});
+
+/*选项卡添加与删除*/
+var tabsModule = angular.module("tabsModule",['ui.bootstrap']);
+
+tabsModule.controller("TabsParentController", function ($scope,$rootScope) {
+ 
+   var setAllInactive = function() {
+        angular.forEach($scope.workspaces, function(workspace) {
+            workspace.active = false;
+        });
+    };
+    //添加
+    var addNewWorkspace = function(name,contentUrl) {
+        var id = $scope.workspaces.length + 1;
+        $scope.workspaces.push({
+            id: id,
+            name: name,
+            active: true,
+            contentUrl:'main/html/content.html'
+        });
+    };
+ 
+    $scope.workspaces =
+    [
+        { id: 1, name: "首页", active:true ,contentUrl:'main/html/welcome.html'}
+    ];
+ 
+   
+    $scope.addWorkspace = function (contentUrl,name) {
+        setAllInactive();
+        addNewWorkspace(name,contentUrl);
+    }; 
+    
+    $rootScope.addWorkspace =  $scope.addWorkspace;
+    
+    $scope.close = function(idNumber){
+        var index = 0;//记录当前元素下标
+        angular.forEach($scope.workspaces, function(workspace) {
+            if(workspace.id === idNumber){
+                $scope.workspaces.splice(index,1);//删除当前下标的选项卡元素
+            }
+            index++;
+        });
+    };
+});
+</script>
+</html>

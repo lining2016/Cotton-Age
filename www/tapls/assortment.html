@@ -18,101 +18,27 @@
 				<li ng-click="switchTab($this)" href="#/assortment/home"><span>Home</span><br>家居</li>
 				<li ng-click="switchTab($this)" href="#/assortment/men"><span>Men<br>男士</span></li>
 			</ul>
-			<!-- <ul>
-				<!-- <ion-tabs class="tabs-energized"> -->
-					<li href="#/assortment/kid">
-						<!-- <ion-tab title="婴童" href="#/assortment/kid">
-						</ion-tab> -->
-						<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()">
-							<span class="tab-title ng-binding" style="color: #000">婴童</span>
-						</a>
-						<ion-nav-view  name="kid-assortment"></ion-nav-view>
-					</li class="tab" href="#/assortment/women">
-					<li href="#/assortment/women">
-						 <!-- <ion-tab title="女士" href="#/assortment/women"> </ion-tab> -->
-						<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()">
-							<span class="tab-title ng-binding">女士</span>
-						</a>
-						<ion-nav-view  name="women-assortment"></ion-nav-view>
-					
-					</li>
-					<li href="#/assortment/home">
-						<!-- <ion-tab title="家居" href="#/assortment/home"></ion-tab> -->
-						<ion-nav-view  name="home-assortment"></ion-nav-view>
-						<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()">
-							<span class="tab-title ng-binding">家居</span>
-						</a>
-					
-					</li>
-					<li href="#/assortment/men">
-					<!-- <ion-tab title="男士" href="#/assortment/men"></ion-tab> -->
-						<ion-nav-view  name="men-assortment"></ion-nav-view>
-						<a ng-class="{'has-badge':badge, 'tab-hidden':isHidden(), 'tab-item-active': isTabActive()}" ng-disabled="disabled()">
-							<span class="tab-title ng-binding">男士</span>
-						</a>
-					
-					</li>
-					
-				<!-- </ion-tabs> -->
-			</ul> -->
-			<!-- <ion-tab title="女士" href="#/assortment/women" icon-on="ion-ios-list" icon-off="ion-ios-list-outline">
-				<ion-nav-view  name="women-assortment"></ion-nav-view>
-			</ion-tab> -->
+			
 		</div>
 		<div class="right" 
 		style="width: 75%;display: inline-block;height: 700px;position: absolute;right: 0;top:6px;">
 			<ion-content id="c-right" >
 				<ul ng-controller="kidCtrl">
 					<li ng-repeat="item in items">
-						<img ng-src={{item.src}} alt="">
+						<img ng-src={{item.src}} alt="" />
 						<p>{{item.title}}</p>
 					</li>
-					<!-- <li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>婴童护理2</p>
-					</li>
-					<li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>婴童护理3</p>
-					</li>
-					<li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>婴童护理4</p>
-					</li>
-					<li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>1235</p>
-					</li>
-					<li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>婴童护理6</p>
-					</li>
-					<li>
-						<img src="../img/ass-list1.png" alt="">
-						<p>婴童护理7</p>
-					</li> -->
 				</ul>
 				<div class="ass-nav">
-					<img src="../img/ass-nav.png" alt="">
+					<img src="../img/ass-nav.png" alt="" />
 				</div>
 				<div class="ass-hot">
 					<p>热卖品</p>
-					<ul>
-						<li>
-							<img src="../img/ass-list1.png" alt="">
-							<p>婴童护理2</p>
-						</li>
-						<li>
-							<img src="../img/ass-list1.png" alt="">
-							<p>婴童护理3</p>
-						</li>
-						<li>
-							<img src="../img/ass-list1.png" alt="">
-							<p>婴童护理4</p>
-						</li>
-						<li>
-							<img src="../img/ass-list1.png" alt="">
-							<p>婴童护理4</p>
+					<ul ng-controller="hotCtrl">
+						<li ng-repeat="hot in hots"> 
+							<img ng-src={{hot.src}} alt="">
+							<p>{{hot.price}}</p>
+							<p>{{hot.title}}</p>
 						</li>
 					</ul>
 				</div>

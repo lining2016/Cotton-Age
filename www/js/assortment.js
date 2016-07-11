@@ -93,25 +93,28 @@ angular.module('starterAssCtrl', [])
 
   var hots = [
     {
-      title:"婴童护理",
-      src:"../img/ass-list1.png"
-    },
-    {
-      title:"婴童卫浴",
-      src:"../img/ass-list1.png"
-    },
-    {
-      title:"婴童床品",
-      src:"../img/ass-list1.png"
-    },
-    {
-      title:"婴童服装",
+      title:"盒装婴幼儿清洁专用纯棉揉巾 100抽/盒 8盒",
       src:"../img/ass-list1.png",
-      age:"(1-4岁)"
+      price:"￥108.0"
+    },
+    {
+      title:"袋装婴幼儿清洁专用纯棉揉巾 80抽/袋 3袋",
+      src:"../img/ass-list1.png",
+      price:"￥108.0"
+    },
+    {
+      title:"盒装蓝粉白色水洗纱布手帕 6条/盒",
+      src:"../img/ass-list1.png",
+      price:"￥98.0"
+    },
+    {
+      title:"盒装蓝色婴童水洗纱布浴巾 95x95cm",
+      src:"../img/ass-list1.png",
+      price:"￥108.0"
     }
   ];
 
-  $scope.items = items;
+  $scope.hots = hots;
 
  
 })

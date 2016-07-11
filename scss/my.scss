@@ -1,0 +1,163 @@
+body{
+	font-size: 16px;
+	
+}
+.my{
+	width: 100%;
+	height:100%;
+	background: #eee;
+	.spe{
+		color:#7d7e81;
+	}
+	ul{
+		
+		&.sec{
+			
+			li{
+				img{
+					display: block;
+					width:80px;
+					height:80px;
+				}
+
+				.sec_con{
+					display: flex;
+					padding-top: 5px;
+
+						>div{
+							padding-right: 8px;
+							img{
+								display: block;
+								width: 30px !important;
+								height: 30px;
+							}
+							p{
+								font-size: 12px;
+							}
+							
+							&:nth-child(1){
+								flex:1;
+								
+							}
+							&:nth-child(2){
+								flex:4;
+								width:100%;
+								padding-top: 3px;
+								.sec_bor{
+									width:100%;
+									height:12px;
+									border-radius: 8px;
+									background: #333;
+									
+								}
+								>div{
+									width:50%;
+									margin:5px auto;
+									height: 20px;
+									line-height: 20px;
+									background: #666;
+									border-radius: 5px;
+									font-size: 12px;
+									color:#fff;
+									p{
+										width:50px;
+										
+										color:#fff;
+										margin:0 auto;
+										span{
+										
+										&:nth-child(1){
+											padding-left: 8%;
+											}
+										}
+									}
+									
+								}
+								
+							}
+							&:nth-child(3){
+								flex:3;
+
+							}
+						}
+						
+					}
+				}
+			}
+		}
+
+		.list{
+			margin-bottom: 0;
+		}
+		.third{
+			font-size: 16px;
+			background: #fff;
+			height:54px;
+			color:#666;
+			display: flex;
+			>div{
+				@include flex(1);
+				margin:4px 0;
+				text-align: center;
+				line-height: 46px;
+				&:nth-child(1){
+					border-right: 1px solid #ccc;
+				}
+				&:nth-child(2){
+					i{
+						font-size: 20px;
+						padding-left:5px;
+
+					}
+				}
+
+			}
+		}
+		.wallet{
+			display: flex;
+			li{
+				border:0;
+				flex:1;
+				&:nth-child(1){
+					>div{
+						border-right:0;
+					}
+				}
+				&:nth-child(2){
+					>div{
+						border-left:0;
+						span{
+							float:right;
+						}
+					}
+				}
+				
+			}
+		}
+
+
+
+		
+		.detail{
+			background: #fff;
+			p{
+				text-align: center;
+				&:nth-child(1){
+					margin-bottom: 0;
+				}
+			}
+
+		}
+
+		.order{
+			margin-top: 15px;
+		}
+
+		.account{
+			margin:15px 0;
+		}
+
+
+
+	}
+	

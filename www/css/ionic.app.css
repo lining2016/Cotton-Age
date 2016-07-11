@@ -9814,3 +9814,288 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 100px;
+  font-family: "宋体"; }
+  body .home-content, html .home-content {
+    font-size: .16rem; }
+    body .home-content .home-header, html .home-content .home-header {
+      border-color: #009c84;
+      background-color: #009c84;
+      display: flex;
+      align-items: center;
+      background-image: linear-gradient(0deg, #009c84, #009c84 50%, transparent 50%); }
+      body .home-content .home-header .icon-fenlei, body .home-content .home-header .icon-xinxi, html .home-content .home-header .icon-fenlei, html .home-content .home-header .icon-xinxi {
+        background: transparent;
+        color: #fff;
+        width: .44rem;
+        text-align: center;
+        font-size: .24rem; }
+      body .home-content .home-header .header-title, html .home-content .home-header .header-title {
+        background-color: #fff;
+        line-height: .30rem;
+        height: .30rem;
+        flex: 1;
+        display: flex;
+        border-radius: .08rem;
+        overflow: hidden; }
+      body .home-content .home-header i, html .home-content .home-header i {
+        color: #259d79;
+        font-size: .14rem;
+        width: .25rem;
+        text-align: center; }
+      body .home-content .home-header .sousuo, html .home-content .home-header .sousuo {
+        flex: 1;
+        height: .30rem; }
+  body .banner, html .banner {
+    height: 1.6rem; }
+    body .banner .box, html .banner .box {
+      width: 100%;
+      height: 1.6rem; }
+      body .banner .box img, html .banner .box img {
+        width: 100%;
+        height: 100%; }
+    body .banner .slider-pager, html .banner .slider-pager {
+      bottom: .1rem;
+      height: .08rem;
+      text-align: right; }
+      body .banner .slider-pager .slider-pager-page, html .banner .slider-pager .slider-pager-page {
+        width: .1rem; }
+        body .banner .slider-pager .slider-pager-page.active, html .banner .slider-pager .slider-pager-page.active {
+          color: #f00; }
+        body .banner .slider-pager .slider-pager-page .ion-record, html .banner .slider-pager .slider-pager-page .ion-record {
+          font-size: .12rem; }
+  body .home-nav .row .col, html .home-nav .row .col {
+    text-align: center; }
+    body .home-nav .row .col i, html .home-nav .row .col i {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: .58rem;
+      height: .58rem;
+      text-align: center;
+      line-height: .50rem;
+      font-size: .30rem;
+      color: #fff;
+      background: #ef5452; }
+    body .home-nav .row .col p, html .home-nav .row .col p {
+      font-size: .12rem;
+      margin: 0;
+      color: #1c1c1d; }
+    body .home-nav .row .col:nth-child(2) i, html .home-nav .row .col:nth-child(2) i {
+      background: #f7b41b; }
+    body .home-nav .row .col:nth-child(3) i, html .home-nav .row .col:nth-child(3) i {
+      background: #9ee2f5; }
+    body .home-nav .row .col:nth-child(4) i, html .home-nav .row .col:nth-child(4) i {
+      background: #30bc7f; }
+  body .home-nav .row:nth-child(2) .col:nth-child(1) i, html .home-nav .row:nth-child(2) .col:nth-child(1) i {
+    background: #e99dbb;
+    font-size: .36rem; }
+  body .home-nav .row:nth-child(2) .col:nth-child(2) i, html .home-nav .row:nth-child(2) .col:nth-child(2) i {
+    background: #e8c3f6; }
+  body .home-nav .row:nth-child(2) .col:nth-child(3) i, html .home-nav .row:nth-child(2) .col:nth-child(3) i {
+    background: #d4bf94; }
+  body .home-nav .row:nth-child(2) .col:nth-child(4) i, html .home-nav .row:nth-child(2) .col:nth-child(4) i {
+    background: #9ee2f5; }
+  body .activity .list, html .activity .list {
+    border: 0; }
+    body .activity .list .item, html .activity .list .item {
+      border: 0; }
+  body .activity .activity-header, html .activity .activity-header {
+    border: 0; }
+    body .activity .activity-header .item, html .activity .activity-header .item {
+      font-size: .14rem;
+      border: 0; }
+    body .activity .activity-header img, html .activity .activity-header img {
+      width: 30%; }
+    body .activity .activity-header span, html .activity .activity-header span {
+      line-height: .3rem; }
+    body .activity .activity-header .ion-ios-arrow-right, html .activity .activity-header .ion-ios-arrow-right {
+      font-size: .24rem; }
+    body .activity .activity-header b, html .activity .activity-header b {
+      border: 1px solid #ccc;
+      border-radius: .03rem;
+      padding: .01rem;
+      margin: 0 .02rem; }
+      body .activity .activity-header b:last-child, html .activity .activity-header b:last-child {
+        border-color: #f66;
+        color: #f66; }
+  body .activity .row .list, html .activity .row .list {
+    padding: 0; }
+    body .activity .row .list .item-thumbnail-center, html .activity .row .list .item-thumbnail-center {
+      padding: .03rem;
+      text-align: center; }
+      body .activity .row .list .item-thumbnail-center img, html .activity .row .list .item-thumbnail-center img {
+        width: 100%; }
+      body .activity .row .list .item-thumbnail-center h2, html .activity .row .list .item-thumbnail-center h2 {
+        line-height: .3rem; }
+      body .activity .row .list .item-thumbnail-center p, html .activity .row .list .item-thumbnail-center p {
+        font-size: .12rem; }
+        body .activity .row .list .item-thumbnail-center p.p-red, html .activity .row .list .item-thumbnail-center p.p-red {
+          background: #fc494b;
+          border-radius: .5rem;
+          width: 85%;
+          margin: 0 auto;
+          color: #fff; }
+        body .activity .row .list .item-thumbnail-center p.Price, html .activity .row .list .item-thumbnail-center p.Price {
+          line-height: .3rem; }
+          body .activity .row .list .item-thumbnail-center p.Price i, html .activity .row .list .item-thumbnail-center p.Price i {
+            color: #fc494b;
+            font-size: .1rem; }
+          body .activity .row .list .item-thumbnail-center p.Price b, html .activity .row .list .item-thumbnail-center p.Price b {
+            color: #fc494b;
+            font-size: .2rem; }
+          body .activity .row .list .item-thumbnail-center p.Price em, html .activity .row .list .item-thumbnail-center p.Price em {
+            text-decoration: line-through; }
+  body .hot .hot-header, html .hot .hot-header {
+    font-size: .2rem; }
+    body .hot .hot-header::before, html .hot .hot-header::before {
+      content: '';
+      border: .02rem solid #009e84; }
+  body .hot .row, html .hot .row {
+    border: 0;
+    padding: 0; }
+    body .hot .row .col, html .hot .row .col {
+      border: 0;
+      padding: 0; }
+      body .hot .row .col .item, html .hot .row .col .item {
+        border: 0;
+        text-align: center; }
+        body .hot .row .col .item img, html .hot .row .col .item img {
+          width: 100%; }
+        body .hot .row .col .item p, html .hot .row .col .item p {
+          line-height: .3rem; }
+          body .hot .row .col .item p.p-red, html .hot .row .col .item p.p-red {
+            color: #f00;
+            text-align: left;
+            font-size: .2rem; }
+
+body {
+  font-size: 16px; }
+
+.my {
+  width: 100%;
+  height: 100%;
+  background: #eee; }
+  .my .spe {
+    color: #7d7e81; }
+  .my ul.sec li img {
+    display: block;
+    width: 80px;
+    height: 80px; }
+  .my ul.sec li .sec_con {
+    display: flex;
+    padding-top: 5px; }
+    .my ul.sec li .sec_con > div {
+      padding-right: 8px; }
+      .my ul.sec li .sec_con > div img {
+        display: block;
+        width: 30px !important;
+        height: 30px; }
+      .my ul.sec li .sec_con > div p {
+        font-size: 12px; }
+      .my ul.sec li .sec_con > div:nth-child(1) {
+        flex: 1; }
+      .my ul.sec li .sec_con > div:nth-child(2) {
+        flex: 4;
+        width: 100%;
+        padding-top: 3px; }
+        .my ul.sec li .sec_con > div:nth-child(2) .sec_bor {
+          width: 100%;
+          height: 12px;
+          border-radius: 8px;
+          background: #333; }
+        .my ul.sec li .sec_con > div:nth-child(2) > div {
+          width: 50%;
+          margin: 5px auto;
+          height: 20px;
+          line-height: 20px;
+          background: #666;
+          border-radius: 5px;
+          font-size: 12px;
+          color: #fff; }
+          .my ul.sec li .sec_con > div:nth-child(2) > div p {
+            width: 50px;
+            color: #fff;
+            margin: 0 auto; }
+            .my ul.sec li .sec_con > div:nth-child(2) > div p span:nth-child(1) {
+              padding-left: 8%; }
+      .my ul.sec li .sec_con > div:nth-child(3) {
+        flex: 3; }
+  .my .list {
+    margin-bottom: 0; }
+  .my .third {
+    font-size: 16px;
+    background: #fff;
+    height: 54px;
+    color: #666;
+    display: flex; }
+    .my .third > div {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin: 4px 0;
+      text-align: center;
+      line-height: 46px; }
+      .my .third > div:nth-child(1) {
+        border-right: 1px solid #ccc; }
+      .my .third > div:nth-child(2) i {
+        font-size: 20px;
+        padding-left: 5px; }
+  .my .wallet {
+    display: flex; }
+    .my .wallet li {
+      border: 0;
+      flex: 1; }
+      .my .wallet li:nth-child(1) > div {
+        border-right: 0; }
+      .my .wallet li:nth-child(2) > div {
+        border-left: 0; }
+        .my .wallet li:nth-child(2) > div span {
+          float: right; }
+  .my .detail {
+    background: #fff; }
+    .my .detail p {
+      text-align: center; }
+      .my .detail p:nth-child(1) {
+        margin-bottom: 0; }
+  .my .order {
+    margin-top: 15px; }
+  .my .account {
+    margin: 15px 0; }
+
+/* Empty. Add your own CSS if you like */
+.tab-item .icon {
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px; }
+
+.tab-item-active {
+  color: #1d7f68; }
+
+.color {
+  color: #f00; }
+
+.cartsbox {
+  width: 100%;
+  height: 100%; }
+  .cartsbox .bg {
+    background: #eee; }
+    .cartsbox .bg .padt60 {
+      padding-top: .44rem;
+      text-align: center;
+      font-size: .12rem;
+      color: #c7c7c7; }
+  .cartsbox .fix {
+    position: fixed;
+    bottom: .44rem;
+    left: 0;
+    width: 100%;
+    height: .44rem;
+    background: red; }

@@ -10094,8 +10094,44 @@ body {
       color: #c7c7c7; }
   .cartsbox .fix {
     position: fixed;
-    bottom: .44rem;
+    bottom: .48rem;
     left: 0;
     width: 100%;
     height: .44rem;
-    background: red; }
+    line-height: .44rem; }
+    .cartsbox .fix .choose {
+      width: 20%;
+      height: 100%;
+      line-height: .44rem;
+      margin-left: .1rem; }
+      .cartsbox .fix .choose input {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%); }
+      .cartsbox .fix .choose span {
+        font-size: .12rem;
+        padding-left: .13rem; }
+    .cartsbox .fix .heji {
+      width: 40%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 20%; }
+      .cartsbox .fix .heji p {
+        height: 50%;
+        width: 100%;
+        line-height: .22rem;
+        font-size: .12rem;
+        padding: 0;
+        margin: 0; }
+        .cartsbox .fix .heji p.col {
+          color: red; }
+    .cartsbox .fix .btn {
+      width: 40%;
+      height: 100%;
+      border: none;
+      color: #fff;
+      background: #009d85;
+      position: absolute;
+      top: 0;
+      right: 0; }

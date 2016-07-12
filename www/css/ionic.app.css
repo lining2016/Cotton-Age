@@ -9982,7 +9982,8 @@ body {
   height: 100%;
   background: #eee; }
   .my .spe {
-    color: #7d7e81; }
+    color: #7d7e81;
+    font-size: 20px; }
   .my ul.sec li img {
     display: block;
     width: 80px;
@@ -10064,8 +10065,9 @@ body {
     background: #fff; }
     .my .detail p {
       text-align: center; }
-      .my .detail p:nth-child(1) {
-        margin-bottom: 0; }
+      .my .detail p.icon {
+        font-size: 24px;
+        margin-bottom: 10px; }
   .my .order {
     margin-top: 15px; }
   .my .account {

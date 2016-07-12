@@ -1,7 +1,7 @@
-// angular.module('startmycontroller', [])
+angular.module('startmycontroller', [])
 
-// .controller('mycontroller', ['$scope',function($scope){
+.controller('mycontroller', ['$scope',function($scope){
 
 
 	
-// }]);
+}]);

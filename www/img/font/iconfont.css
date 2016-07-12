@@ -14,6 +14,20 @@
   url('iconfont2.svg?t=1468066286#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont-my.eot?t=1468300503'); /* IE9*/
+  src: url('iconfont-my.eot?t=1468300503#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont-my.woff?t=1468300503') format('woff'), /* chrome, firefox */
+  url('iconfont-my.ttf?t=1468300503') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont-my.svg?t=1468300503#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+
+
+
+
+
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -37,3 +51,10 @@
 .icon-s05:before { content: "\e628"; }
 .icon-nv:before { content: "\e60e"; }
 .icon-nan:before { content: "\e60b"; }
+
+
+.icon-yunshu:before { content: "\e671"; }
+.icon-dingdan:before { content: "\e675"; }
+.icon-zhanghu:before { content: "\e606"; }
+.icon-daifukuan:before { content: "\e61e"; }
+.icon-yiwancheng:before { content: "\e626"; }

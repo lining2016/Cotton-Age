@@ -1,6 +1,7 @@
-<div class="home-content">
+<div class="home-content" >
+  <div class="banktop"ng-click="scrollTop()">返回顶部</div>
   <ion-header-bar class="home-header">
-    <span class="  icon iconfont icon-fenlei " >
+    <span class="  icon iconfont icon-fenlei " ng-click="gotoTab(1)" >
       <!-- <a nav-transition="none" href="#/seach">seach</a> -->
     </span>
     <label for="" class=" header-title">
@@ -66,7 +67,7 @@
         <i class="icon iconfont icon-home"></i>
         <p>Home/ 家居</p>
       </div>
-      <div class="col">
+      <div class="col ">
         <i class="icon iconfont icon-nan"></i>
         <p>Men/ 男士</p>
       </div>
@@ -81,47 +82,93 @@
     </a>
     </div>
     <div class="row">
-      <div class="list col">
-        <a class="item item-thumbnail-center" href="#">
-          <img src="http://placehold.it/170x200">
-          <h2>脸部清洁护理专用</h2>
-          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
-            <p class="Price">秒杀价 <i>￥</i><b>142</b><i>.3 </i> <em> 237.2</em></p>
-        </a>
-      </div>
-      <div class="list col">
-        <a class="item item-thumbnail-center" href="#">
-          <img src="http://placehold.it/170x200">
-          <h2>脸部清洁护理专用</h2>
-          <p class="p-red">下单即赠婴幼儿纯棉柔巾</p>
-          <p class="Price">秒杀价 <i>￥</i><b>142</b><i>.3 </i> <em> 237.2</em></p>
-        </a>
-
-      </div>
+      <ion-list class="col col-50" ng-repeat="item in items">
+        <ion-item  class="item-thumbnail-center ">
+            <a href="#">
+            <img src="http://placehold.it/170x200">
+            <h2>{{item.title}}</h2>
+            <p class="p-red">{{item.description}}</p>
+              <p class="Price">秒杀价 <i>￥</i><b>{{item.newprice}}</b><i>.3 </i> <em> {{item.oldprice}}</em></p>
+            </a>
+        </ion-item>
+      </ion-list>
     </div>
   </div>
 
   <div class="hot">
     <h2 class="hot-header padding-left">  /HOT推荐/</h2>
-    <div class="row">
-      <div class="list col">
-        <a class="item item-thumbnail-center" href="#">
-          <img src="http://placehold.it/170x200">
-          <h2>脸部清洁护理专用</h2>
-          <p class="p-red">￥<i>132</i></p>
-
-        </a>
+      <div class="row" ng-repeat="item in hotitems">
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[0].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[0].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[1].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[1].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
       </div>
-      <div class="list col">
-        <a class="item item-thumbnail-center" href="#">
-          <img src="http://placehold.it/170x200">
-          <h2>脸部清洁护理专用</h2>
-          <p class="p-red">￥<i>132</i></p>
-
-        </a>
-
+  </div>
+  <div class="new">
+      <h2 class="hot-header padding-left">  /NEW 新品/</h2>
+      <div class="new-one padding">
+        <img src="http://placehold.it/320x200" alt="">
       </div>
-    </div>
+      <div class="row" ng-repeat="item in hotitems">
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[0].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[0].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[1].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[1].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
+      </div>
+  </div>
+  <div class="kids">
+      <h2 class="hot-header padding-left">  /Kids 婴童/</h2>
+      <div class="new-one padding">
+        <img src="http://placehold.it/320x200" alt="">
+      </div>
+      <div class="row" ng-repeat="item in hotitems">
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[0].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[0].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
+        <ion-list class="col col-50" >
+          <ion-item  class="item-thumbnail-center ">
+              <a href="#">
+              <img src="http://placehold.it/140x140">
+              <h2>{{item[1].title}}</h2>
+                <p class="p-red"> ￥<b>{{item[1].newprice}}</b><i>.3 </i> </p>
+              </a>
+          </ion-item>
+        </ion-list>
+      </div>
   </div>
  </ion-content>
 

@@ -5,6 +5,10 @@ body,html{
   font-family: "宋体";
   .home-content{
     font-size:.16rem;
+    position:relative;
+    .banktop{
+      
+    }
     .home-header{
       border-color: #009c84;
       background-color:#009c84;
@@ -175,6 +179,9 @@ body,html{
         .item-thumbnail-center{
           padding:.03rem;
           text-align: center;
+          a{
+            text-decoration: none;
+          }
           img{
             width:100%;
           }
@@ -183,6 +190,7 @@ body,html{
             line-height:.3rem;
           }
           p{
+            width:100%;
             font-size:.12rem;
             &.p-red{
               background:#fc494b;
@@ -211,7 +219,7 @@ body,html{
       }
     }
   }
-  .hot{
+  .hot,.new,.kids{
     .hot-header{
       &::before{
         content:'';
@@ -220,28 +228,41 @@ body,html{
 
       font-size:.2rem;
     }
-    .row{
-      border:0;
-      padding:0;
-      .col{
-        border:0;
-          padding:0;
-        .item{
-          border:0;
-          text-align: center;
+    .row {
+      .list{
+        padding:0;
+          border: 0;
+        .item-thumbnail-center{
+          border: 0;
+          padding:.03rem;
 
+          a{
+            text-decoration: none;
+          }
           img{
             width:100%;
           }
+          h2{
+            line-height:.3rem;
+            font-size:.16rem;
+          }
           p{
-            line-height: .3rem;
+            font-size:.16rem;
+            width:100%;
             &.p-red{
               color:#f00;
               text-align: left;
-              font-size:.2rem;
+
             }
           }
         }
+      }
+    }
+  }
+  .new,.kids{
+    .new-one{
+      img{
+        width:100%;
       }
     }
   }

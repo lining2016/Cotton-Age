@@ -9821,7 +9821,8 @@ body, html {
   font-size: 100px;
   font-family: "宋体"; }
   body .home-content, html .home-content {
-    font-size: .16rem; }
+    font-size: .16rem;
+    position: relative; }
     body .home-content .home-header, html .home-content .home-header {
       border-color: #009c84;
       background-color: #009c84;
@@ -9928,11 +9929,14 @@ body, html {
     body .activity .row .list .item-thumbnail-center, html .activity .row .list .item-thumbnail-center {
       padding: .03rem;
       text-align: center; }
+      body .activity .row .list .item-thumbnail-center a, html .activity .row .list .item-thumbnail-center a {
+        text-decoration: none; }
       body .activity .row .list .item-thumbnail-center img, html .activity .row .list .item-thumbnail-center img {
         width: 100%; }
       body .activity .row .list .item-thumbnail-center h2, html .activity .row .list .item-thumbnail-center h2 {
         line-height: .3rem; }
       body .activity .row .list .item-thumbnail-center p, html .activity .row .list .item-thumbnail-center p {
+        width: 100%;
         font-size: .12rem; }
         body .activity .row .list .item-thumbnail-center p.p-red, html .activity .row .list .item-thumbnail-center p.p-red {
           background: #fc494b;
@@ -9950,32 +9954,35 @@ body, html {
             font-size: .2rem; }
           body .activity .row .list .item-thumbnail-center p.Price em, html .activity .row .list .item-thumbnail-center p.Price em {
             text-decoration: line-through; }
-  body .hot .hot-header, html .hot .hot-header {
+  body .hot .hot-header, body .new .hot-header, body .kids .hot-header, html .hot .hot-header, html .new .hot-header, html .kids .hot-header {
     font-size: .2rem; }
-    body .hot .hot-header::before, html .hot .hot-header::before {
+    body .hot .hot-header::before, body .new .hot-header::before, body .kids .hot-header::before, html .hot .hot-header::before, html .new .hot-header::before, html .kids .hot-header::before {
       content: '';
       border: .02rem solid #009e84; }
-  body .hot .row, html .hot .row {
-    border: 0;
-    padding: 0; }
-    body .hot .row .col, html .hot .row .col {
+  body .hot .row .list, body .new .row .list, body .kids .row .list, html .hot .row .list, html .new .row .list, html .kids .row .list {
+    padding: 0;
+    border: 0; }
+    body .hot .row .list .item-thumbnail-center, body .new .row .list .item-thumbnail-center, body .kids .row .list .item-thumbnail-center, html .hot .row .list .item-thumbnail-center, html .new .row .list .item-thumbnail-center, html .kids .row .list .item-thumbnail-center {
       border: 0;
-      padding: 0; }
-      body .hot .row .col .item, html .hot .row .col .item {
-        border: 0;
-        text-align: center; }
-        body .hot .row .col .item img, html .hot .row .col .item img {
-          width: 100%; }
-        body .hot .row .col .item p, html .hot .row .col .item p {
-          line-height: .3rem; }
-          body .hot .row .col .item p.p-red, html .hot .row .col .item p.p-red {
-            color: #f00;
-            text-align: left;
-            font-size: .2rem; }
+      padding: .03rem; }
+      body .hot .row .list .item-thumbnail-center a, body .new .row .list .item-thumbnail-center a, body .kids .row .list .item-thumbnail-center a, html .hot .row .list .item-thumbnail-center a, html .new .row .list .item-thumbnail-center a, html .kids .row .list .item-thumbnail-center a {
+        text-decoration: none; }
+      body .hot .row .list .item-thumbnail-center img, body .new .row .list .item-thumbnail-center img, body .kids .row .list .item-thumbnail-center img, html .hot .row .list .item-thumbnail-center img, html .new .row .list .item-thumbnail-center img, html .kids .row .list .item-thumbnail-center img {
+        width: 100%; }
+      body .hot .row .list .item-thumbnail-center h2, body .new .row .list .item-thumbnail-center h2, body .kids .row .list .item-thumbnail-center h2, html .hot .row .list .item-thumbnail-center h2, html .new .row .list .item-thumbnail-center h2, html .kids .row .list .item-thumbnail-center h2 {
+        line-height: .3rem;
+        font-size: .16rem; }
+      body .hot .row .list .item-thumbnail-center p, body .new .row .list .item-thumbnail-center p, body .kids .row .list .item-thumbnail-center p, html .hot .row .list .item-thumbnail-center p, html .new .row .list .item-thumbnail-center p, html .kids .row .list .item-thumbnail-center p {
+        font-size: .16rem;
+        width: 100%; }
+        body .hot .row .list .item-thumbnail-center p.p-red, body .new .row .list .item-thumbnail-center p.p-red, body .kids .row .list .item-thumbnail-center p.p-red, html .hot .row .list .item-thumbnail-center p.p-red, html .new .row .list .item-thumbnail-center p.p-red, html .kids .row .list .item-thumbnail-center p.p-red {
+          color: #f00;
+          text-align: left; }
+  body .new .new-one img, body .kids .new-one img, html .new .new-one img, html .kids .new-one img {
+    width: 100%; }
 
 body {
-  font-size: 16px;
-  color: #3c3c3c; }
+  font-size: 16px; }
 
 .my {
   width: 100%;
@@ -10082,3 +10089,21 @@ body {
 
 .color {
   color: #f00; }
+
+.cartsbox {
+  width: 100%;
+  height: 100%; }
+  .cartsbox .bg {
+    background: #eee; }
+    .cartsbox .bg .padt60 {
+      padding-top: .44rem;
+      text-align: center;
+      font-size: .12rem;
+      color: #c7c7c7; }
+  .cartsbox .fix {
+    position: fixed;
+    bottom: .44rem;
+    left: 0;
+    width: 100%;
+    height: .44rem;
+    background: red; }
